@@ -1,0 +1,17 @@
+# Dependencias
+node_modules/
+
+# Compilación
+dist/
+
+# Variables de entorno (contienen datos sensibles, nunca se publican)
+.env
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+
+# Sistema operativo / editores
+.DS_Store
+.vscode/
+*.log
