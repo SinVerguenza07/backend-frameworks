@@ -108,7 +108,7 @@ async function main(): Promise<void> {
         break;
       case "5":
         exit = true;
-        console.log("\n👋 ¡Hasta luego!\n");
+        console.log("\n ¡Hasta luego!\n");
         break;
       default:
         console.log("\n⚠️  Opción no válida. Elige un número del 1 al 5.\n");

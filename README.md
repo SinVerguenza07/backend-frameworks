@@ -21,24 +21,18 @@ El proyecto está organizado de forma modular, separando el modelo de datos, la 
 
 Para instalar pnpm si no lo tienes:
 
-```bash
 npm install -g pnpm
-```
 
 ## Instalación
 
 1. Clona el repositorio o descarga el proyecto.
 2. Instala las dependencias:
 
-   ```bash
    pnpm install
-   ```
 
 3. Crea tu archivo de variables de entorno a partir del ejemplo incluido:
 
-   ```bash
    cp .env.example .env
-   ```
 
    El archivo `.env` no se publica ni se sube al repositorio (está en `.gitignore`), ya que es el lugar donde irían configuraciones específicas de cada entorno.
 
@@ -61,14 +55,9 @@ npm install -g pnpm
 ## Uso
 
 Para iniciar la aplicación en modo desarrollo:
-
-```bash
 pnpm dev
-```
 
 Se mostrará un menú interactivo en la terminal:
-
-```
 ========================================
   Gestor de Tareas CLI (development)
 ========================================
@@ -79,14 +68,11 @@ Se mostrará un menú interactivo en la terminal:
 5. Salir
 ----------------------------------------
 
-Elige una opción (1-5):
-```
+Elige una opción (1-5)
 
 Escribe el número de la opción deseada y sigue las instrucciones en pantalla. Todas las tareas se almacenan en memoria mientras el programa está en ejecución; al cerrar la aplicación, los datos se pierden (no hay persistencia en disco ni en base de datos).
 
 ## Estructura del proyecto
-
-```
 backend-frameworks/
 ├── src/
 │   ├── config/
@@ -104,8 +90,7 @@ backend-frameworks/
 ├── pnpm-lock.yaml
 ├── preguntas-cierre.md          # Respuestas a las preguntas de cierre del ejercicio
 ├── README.md
-└── tsconfig.json
-```
+└── tsconfig.jso
 
 ## Funcionalidades y validaciones
 
@@ -117,11 +102,8 @@ backend-frameworks/
 ## Verificación
 
 Antes de publicar cambios, se recomienda ejecutar:
-
-```bash
 pnpm typecheck   # sin errores de TypeScript
-pnpm dev         # probar el flujo completo en la terminal
-```
+pnpm dev         # probar el flujo completo en la termina
 
 ## Historial de cambios
 
