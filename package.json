@@ -16,7 +16,7 @@
     "cli",
     "tareas"
   ],
-  "author": "",
+  "author": "jonathan",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5"
