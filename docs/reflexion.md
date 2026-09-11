@@ -1,7 +1,7 @@
 # Reflexión — EC1 F2 A3
 
-**Nombre:**
-**Grupo:**
+**Nombre: Jonathan Ariel Lagarda Durazo**
+**Grupo: 001**
 
 ## 1. ¿Qué responsabilidad cumple Express y qué responsabilidad conserva el servicio?
 
