@@ -16,7 +16,7 @@ export const getTask = async (_req: Request, res: Response): Promise<void> => {
 };
 
 export const postTask = async (_req: Request, res: Response): Promise<void> => {
-  const task = await createTask(res.locals.taskTitle);
+  const task = await createTask(res.locals.taskTitle, res.locals.taskDescription);
   res.status(201).json({ data: task });
 };
 
