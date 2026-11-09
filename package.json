@@ -10,8 +10,9 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
-  },
+    "format:check": "prettier --check .",
+   "role:set": "tsx src/scripts/set-user-role.ts"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -28,13 +29,17 @@
     "@types/node": "^26.4.0",
     "prettier": "^3.9.6",
     "tsx": "^4.23.13",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "@types/cors": "2.8.19"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^8.24.4",
     "jose": "6.2.12",
-    "bcryptjs": "3.0.3"
+    "bcryptjs": "3.0.3",
+    "cors": "2.8.6",
+    "helmet": "8.3.0",
+    "express-rate-limit": "8.7.1"
   }
 }
