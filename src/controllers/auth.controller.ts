@@ -1,5 +1,9 @@
 import type { Request, Response } from "express";
-import { loginUser, registerUser } from "../services/auth.service.js";
+import {
+  getAuthenticatedUser,
+  loginUser,
+  registerUser,
+} from "../services/auth.service.js";
 export const postRegister = async (
   _req: Request,
   res: Response,
@@ -11,4 +15,13 @@ export const postLogin = async (
   res: Response,
 ): Promise<void> => {
   res.status(200).json({ data: await loginUser(res.locals.loginInput) });
+};
+export const getMe = async (_req: Request, res: Response): Promise<void> => {
+  const auth = res.locals.auth;
+  if (!auth) {
+    throw new Error("La ruta /me requiere el middleware authenticate.");
+  }
+  res.status(200).json({
+    data: { user: await getAuthenticatedUser(auth.userId) },
+  });
 };
