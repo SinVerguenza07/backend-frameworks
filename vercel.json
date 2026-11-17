@@ -2,6 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "pnpm install --frozen-lockfile",
-  "buildCommand": "pnpm build",
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+  "buildCommand": "pnpm build && mkdir -p public && printf 'User-agent: *\\nDisallow: /\\n' > public/robots.txt",
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ]
 }
