@@ -14,6 +14,7 @@ import { healthRouter } from "./routes/health.routes.js";
 import { taskRouter } from "./routes/task.routes.js";
 export const app = express();
 app.disable("x-powered-by");
+app.set("trust proxy", 1);
 app.use(requestContext);
 app.get("/api-docs.json", documentationSecurityHeaders, (_req, res): void => {
   res.status(200).json(openApiDocument);
